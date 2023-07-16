@@ -9,7 +9,7 @@
 </div>
 
 ## The Goal
-To create a free AI Waifu that will run on your local computer with minimal of GPU.
+To create a free AI Waifu that will run on your local computer with minimal GPU requirement.
 
 ## Complete Video Installation Guide
 [Video Link](https://youtu.be/aZDaESBFic4)
@@ -23,7 +23,7 @@ To create a free AI Waifu that will run on your local computer with minimal of G
 - Start Vtube Studio and toggle on "Start Api" from settings
 - Double click to run the start.bat file
 - Allow the plugin in Vtube studio
-- In terminal, when Mic comes, please CTRL and then speak
+- In terminal, when Mic comes, press CTRL and then speak
    
 
 
