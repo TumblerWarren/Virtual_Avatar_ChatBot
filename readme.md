@@ -58,8 +58,8 @@ If you really like the project please support me through [PayPal](https://paypal
 I used the following projects as my reference. My heartful gratitude to these guys!
 
 
-[desktop-waifu](https://github.com/AlizerUncaged/desktop-waifu) - Your ultimate companion!
-[CharacterAI](https://github.com/kramcat/CharacterAI) - An unofficial API for Character AI for Python using Playwright.
-[Whisper](https://github.com/openai/whisper) - Whisper is a general-purpose speech recognition model.
-[PYVTS](https://github.com/Genteki/pyvts) - A python library for interacting with the VTube Studio API.
-[COQUI-AI](https://github.com/coqui-ai/TTS) - TTS is a library for advanced Text-to-Speech generation. 
+-[desktop-waifu](https://github.com/AlizerUncaged/desktop-waifu) - Your ultimate companion!
+-[CharacterAI](https://github.com/kramcat/CharacterAI) - An unofficial API for Character AI for Python using Playwright.
+-[Whisper](https://github.com/openai/whisper) - Whisper is a general-purpose speech recognition model.
+-[PYVTS](https://github.com/Genteki/pyvts) - A python library for interacting with the VTube Studio API.
+-[COQUI-AI](https://github.com/coqui-ai/TTS) - TTS is a library for advanced Text-to-Speech generation. 
