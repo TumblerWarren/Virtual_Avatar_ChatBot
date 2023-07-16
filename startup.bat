@@ -23,9 +23,6 @@ python -m pip install git+https://github.com/openai/whisper.git 2>> "%LOG_FILE%"
 REM Install Playwright
 python -m playwright install 2>> "%LOG_FILE%"
 
-npx playwright install
-
-
 REM Install the remaining dependencies from requirements.txt
 python -m pip install -r requirements.txt 2>> "%LOG_FILE%"
 
