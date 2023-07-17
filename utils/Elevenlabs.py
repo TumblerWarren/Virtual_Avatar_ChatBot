@@ -19,6 +19,6 @@ def generate_voice(responded_text):
     audio_gen = generate(text=responded_text,voice=USER_VOICE)
     save(audio_gen, OUTPUT_PATH)
     return OUTPUT_PATH
-    #audio.play_mp3(OUTPUT_PATH)
+    
 
 
