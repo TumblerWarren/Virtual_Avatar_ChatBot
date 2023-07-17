@@ -28,6 +28,9 @@ To create a free AI Waifu that will run on your local computer with minimal GPU 
 
 
 ✔️✔️ Requirements:
+- Above Windows 7
+- [C++ Compiler](Install c++ compiler:- https://sourceforge.net/projects/mingw-w64/)
+- [Git](https://git-scm.com/)
 - Need help to Install FFmpeg? See this [video](https://www.youtube.com/watch?v=EyIIvctDhYc&t=252s)
 - Find the api key for https://beta.character.ai/ || Need help to find the API key, visit the [site](https://pycai.gitbook.io/welcome/api/values)
 - [Visual C++ Redistributable](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170) for Visual Studio 2015, 2017 and 2019.
