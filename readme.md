@@ -3,7 +3,7 @@
   <br>
   <h1>🌟Yours Truly the AI Waifu</h1>
   <p>
-    💬 The Ultimate soulmate for Nerds
+    💬 The Ultimate soulmate for Nerds!
     <br>
   </p>
 </div>
@@ -16,14 +16,14 @@ To create a free AI Waifu that will run on your local computer with minimal GPU 
 
 ## Steps for installation
 
-- Make sure to install ffmpeg in your computer
-- Install vtube studio
-- Download the zip file
-- Unzip it and set the .env file using notepad
-- Start Vtube Studio and toggle on "Start Api" from settings
-- Double click to run the start.bat file
-- Allow the plugin in Vtube studio
-- In terminal, when Mic comes, press CTRL and then speak
+- Make sure to install ffmpeg in your computer.
+- Install vtube studio.
+- Download the zip file.
+- Unzip it and set the .env file using notepad.
+- Start Vtube Studio and toggle on "Start Api" from settings.
+- Double click to run the start.bat file.
+- Allow the plugin in Vtube studio.
+- In terminal, when Mic comes, press CTRL and then speak.
    
 
 
