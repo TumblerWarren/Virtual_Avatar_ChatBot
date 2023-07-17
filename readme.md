@@ -37,7 +37,7 @@ To create a free AI Waifu that will run on your local computer with minimal GPU 
 - Install [VTube Studio](https://denchisoft.com/)
 - Find the API key for [elevenlabs](https://beta.elevenlabs.io/speech-synthesis)
 
-If you run into any problems, you can go to the following website to report issues: [https://github.com/TumblerWarren/Waifu/issues/new]
+If you run into any problems, you can go to the following website to report [issues](https://github.com/TumblerWarren/Waifu/issues/new)
 
 ##  🚧Future Goals
 - Running the project without depending on beta.charecter.ai website, by runing llm model locally.
