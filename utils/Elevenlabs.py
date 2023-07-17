@@ -1,4 +1,4 @@
-from elevenlabs import generate, play, set_api_key ,save
+from elevenlabs import generate, play, set_api_key ,save, voices
 import os
 
 
@@ -13,7 +13,7 @@ USER_VOICE=os.environ.get("VOICE_MODEL").title()
 current_directory = os.path.dirname(os.path.abspath(__file__))
 FILENAME = "output.mp3"
 OUTPUT_PATH = os.path.join(current_directory, "resource", "voice_out", FILENAME)
-
+voices = voices()
 
 def generate_voice(responded_text):
     audio_gen = generate(text=responded_text,voice=USER_VOICE)
