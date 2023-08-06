@@ -1,3 +1,13 @@
+## POINTS TO REMEMEBER ⚠️
+Remember to use Voicevox_startup.bat if you are using Voicevox as your TTS.
+
+## TROUBLESHOOT 😵‍💫
+On first time running the Voicevox_startup.bat, it may not work properly. So after running for the first time, close it and then run it again. It should work out fine.
+
+## VOICES AVAILABLE ✔️ 
+These are the following voices you can select from the Voicevox.
+Enter the id in the .env file according to your choice, if you are using Voicevox as your TTS.
+
 | ID | English Voice   | Japanese Voice  |
 |----|-----------------|-----------------|
 | 1  | Shikoku Mutan   | 四国めたん        |
