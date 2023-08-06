@@ -1,7 +1,6 @@
 import colorama
 import humanize, os, threading
 
-
 import utils.Elevenlabs
 import utils.charecter
 import utils.audio
@@ -9,12 +8,16 @@ import utils.hotkeys
 import utils.transcriber_translate
 import TTS.Offline_tts
 import utils.vtube_studio
+import utils.voicevox_setup
+
 
 from dotenv import load_dotenv
 load_dotenv()
 
 TTS_CHOICE = os.environ.get("TTS_CHOICE")
 TT_CHOICE = os.environ.get("WHISPER_CHOICE")
+
+
 def main():
     while True:
         print("You" + colorama.Fore.GREEN + colorama.Style.BRIGHT + " (mic) " + colorama.Fore.RESET + ">", end="", flush=True)
@@ -50,6 +53,15 @@ def main():
         elif TTS_CHOICE == "LOCAL_TTS":
             TTS.Offline_tts.test_1(message)
 
+        elif TTS_CHOICE == "VOICEVOX":
+            id=os.environ.get("VOICE_ID")
+            utils.voicevox_setup.generate_voice(message,id)
+
+
+
+
+
+
         else:
             print("The Choice put in .env file not correct!")
 
@@ -76,6 +88,7 @@ def run_program():
 
     main()
 
+
 if __name__ == "__main__":
 
     current_directory = os.path.dirname(os.path.abspath(__file__))
@@ -91,5 +104,6 @@ if __name__ == "__main__":
     # Create the voice_in and voice_out directories if they don't exist
     os.makedirs(voice_in_directory, exist_ok=True)
     os.makedirs(voice_out_directory, exist_ok=True)
+
 
     run_program()
