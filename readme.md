@@ -39,8 +39,8 @@ To create a free AI Waifu that will run on your local computer with minimal GPU 
 
 If you run into any problems, you can go to the following website to report [issues](https://github.com/TumblerWarren/Waifu/issues/new).
 
-##DOCUMENTATION
-Help for using [Voicevox](https://github.com/TumblerWarren/Waifu/blob/master/Docs/VoiceVox_Readme_Doc.md).
+## DOCUMENTATION
+- Help for using [Voicevox](https://github.com/TumblerWarren/Waifu/blob/master/Docs/VoiceVox_Readme_Doc.md).
 
 ##  🚧 Goals
 - Add Voicevox Functionality -- DONE ✅
