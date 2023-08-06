@@ -61,7 +61,6 @@ If you really like the project please support me through [PayPal](https://paypal
 ## 🎁 Credits
 I used the following projects as my reference. My heartful gratitude to these guys!
 
-
 [desktop-waifu](https://github.com/AlizerUncaged/desktop-waifu) - Your ultimate companion!
 
 [CharacterAI](https://github.com/kramcat/CharacterAI) - An unofficial API for Character AI for Python using Playwright.
@@ -71,3 +70,9 @@ I used the following projects as my reference. My heartful gratitude to these gu
 [PYVTS](https://github.com/Genteki/pyvts) - A python library for interacting with the VTube Studio API.
 
 [COQUI-AI](https://github.com/coqui-ai/TTS) - TTS is a library for advanced Text-to-Speech generation. 
+
+[VOICEVOX](https://github.com/VOICEVOX/voicevox) - The Voicevox Engine
+
+[VOICEVOX API](https://github.com/voicevox-client) - An unofficial API for python
+
+## LICENSE
