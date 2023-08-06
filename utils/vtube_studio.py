@@ -56,6 +56,9 @@ def speak():
         memfile = os.path.join(os.path.dirname(os.path.abspath(__file__)), "resource", "Voice_out", "output.mp3")
         utils.audio.play_mp3(memfile,set_audio_level)
 
+    elif TTS_CHOICE.upper()=="VOICEVOX":
+        memfile = os.path.join(os.path.dirname(os.path.abspath(__file__)), "resource", "Voice_out", "voicevox.wav")
+        utils.audio.play_wav(memfile, set_audio_level)
 
 
 def action():
