@@ -76,3 +76,4 @@ I used the following projects as my reference. My heartful gratitude to these gu
 [VOICEVOX API](https://github.com/voicevox-client) - An unofficial API for python
 
 ## LICENSE
+Falls under The MIT License (MIT) Copyright © 2023
