@@ -1,85 +1,29 @@
-# How to use VoiceVox
+| ID | English Voice   | Japanese Voice  |
+|----|-----------------|-----------------|
+| 1  | Shikoku Mutan   | 四国めたん        |
+| 2  | Zundamon        | ずんだもん        |
+| 3  | Kasukabe Tsumugi| 春日部つむぎ      |
+| 4  | It's raining    | 雨晴はう          |
+| 5  | Ritual          | 波音リツ          |
+| 6  | Takehiro Genno  | 玄野武宏          |
+| 7  | Torataro Shirakami | 白上虎太郎      |
+| 8  | Ryusei Aoyama   | 青山龍星          |
+| 9  | Heart           | 冥鳴ひまり        |
+| 10 | Kyushu Sora     | 九州そら          |
+| 11 | Mochiko         | もち子さん        |
+| 12 | Kenzaki Male and Eit | 剣崎雌雄      |
+| 13 | WhiteCUL        | WhiteCUL         |
+| 14 | Rear ghost      | 後鬼              |
+| 15 | No.7            | No.7              |
+| 16 | Chibi grandfather | ちび式じい      |
+| 17 | Sakura Song Miko | 櫻歌ミコ         |
+| 18 | Saya/SAYO       | 小夜/SAYO         |
+| 19 | Nurse Robo_ Type T | ナースロボ＿タイプＴ |
+| 20 | † Paladin Red   | †聖騎士 紅桜†     |
+| 21 | Takamatsuya     | 雀松朱司          |
+| 22 | Kirigashima Sorin | 麒ヶ島宗麟      |
+| 23 | Spring Nana     | 春歌ナナ          |
+| 24 | Cats almorinous | 猫使アル          |
+| 25 | Cat messenger   | 猫使ビィ          |
+| 26 | Chinese rabbit  | 中国うさぎ        |
 
-Inside, it will display:
-
-1. 四国めたん
-   Shikoku Mutan
-
-2. ずんだもん
-   Zundamon
-
-3. 春日部つむぎ
-   Kasukabe Tsumugi
-
-4. 雨晴はう
-   It's raining
-
-5. 波音リツ
-   Ritual
-
-6. 玄野武宏
-   Takehiro Genno
-
-7. 白上虎太郎
-   Torataro Shirakami
-
-8. 青山龍星
-   Ryusei Aoyama
-
-9. 冥鳴ひまり
-   Heart
-
-10. 九州そら
-    Kyushu Sora
-
-11. もち子さん
-    Mochiko
-
-12. 剣崎雌雄
-    Kenzaki Male and Eit
-
-13. WhiteCUL
-    WhiteCUL
-
-14. 後鬼
-    Rear ghost
-
-15. No.7
-    No.7
-
-16. ちび式じい
-    Chibi grandfather
-
-17. 櫻歌ミコ
-    Sakura Song Miko
-
-18. 小夜/SAYO
-    Saya/SAYO
-
-19. ナースロボ＿タイプＴ
-    Nurse Robo_ Type T
-
-20. †聖騎士 紅桜†
-    † Paladin Red 士 士 士 士 士 士
-
-21. 雀松朱司
-    Takamatsuya
-
-22. 麒ヶ島宗麟
-    Kirigashima Sorin
-
-23. 春歌ナナ
-    Spring Nana
-
-24. 猫使アル
-    Cats almorinous
-
-25. 猫使ビィ
-    Cat messenger
-
-26. 中国うさぎ
-    Chinese rabbit
-
-27. as voice choices
-
-If you want to use VoiceVox, set `tts_choice` to `voicevox` and then run the `voicevox_startup` file, not the normal `startup.bat` file.
