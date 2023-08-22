@@ -41,7 +41,7 @@ If you run into any problems, you can go to the following website to report [iss
 
 ## DOCUMENTATION
 - Help for using [Voicevox](https://github.com/TumblerWarren/Waifu/blob/master/Docs/VoiceVox_Readme_Doc.md).
-- Help for using [Oogabooga Text Gen](https://github.com/TumblerWarren/Waifu/blob/master/Docs/OogaBooga%20Text%20Gen%20Help.md)
+- Help for using [Oogabooga Text Gen](https://github.com/TumblerWarren/Waifu/blob/master/Docs/OogaBooga%20Text%20Gen%20Help.md).
 
 ##  🚧 Goals
 - Add Voicevox Functionality -- DONE ✅
