@@ -9,7 +9,8 @@ HOST = 'localhost:5000'
 URI = f'http://{HOST}/api/v1/chat'
 
 received_message = ""
-CHARACTER_CARD=os.environ.get("CHARACTER_CARD")
+CHARACTER_CARD = os.environ.get("CHARACTER_CARD")
+your_name = os.environ.get("your_name")
 
 def run(user_input, history):
     global received_message
@@ -22,7 +23,7 @@ def run(user_input, history):
         'mode': 'chat',  # Valid options: 'chat', 'chat-instruct', 'instruct'
         'character': CHARACTER_CARD,
         'instruction_template': 'Vicuna-v1.1',  # Will get autodetected if unset
-        'your_name': 'USER',
+        'your_name': your_name,
         # 'name1': 'name of user', # Optional
         # 'name2': 'name of character', # Optional
         # 'context': 'character context', # Optional
