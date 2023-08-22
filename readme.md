@@ -81,4 +81,4 @@ I used the following projects as my reference. My heartful gratitude to these gu
 [VOICEVOX API](https://github.com/voicevox-client) - An unofficial API for python
 
 ## LICENSE
-Falls under The MIT License (MIT) Copyright © 2023
+Falls under [The MIT License](https://github.com/TumblerWarren/Waifu/blob/master/Docs/LICENSE.md) (MIT) Copyright © 2023
