@@ -41,9 +41,11 @@ If you run into any problems, you can go to the following website to report [iss
 
 ## DOCUMENTATION
 - Help for using [Voicevox](https://github.com/TumblerWarren/Waifu/blob/master/Docs/VoiceVox_Readme_Doc.md).
+- Help for using [Oogabooga Text Gen]()
 
 ##  🚧 Goals
 - Add Voicevox Functionality -- DONE ✅
+- Supports Oogabooga Text Gen -- DONE ✅
 - Running the project without depending on beta.charecter.ai website, by runing llm model locally -- PENDING ⏳
 - Give the waifu an access to the internet -- PENDING ⏳
 - All many more.
