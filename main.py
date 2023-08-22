@@ -9,13 +9,14 @@ import utils.transcriber_translate
 import TTS.Offline_tts
 import utils.vtube_studio
 import utils.voicevox_setup
-
+import API.Oogabooga_Api_Support
 
 from dotenv import load_dotenv
 load_dotenv()
 
 TTS_CHOICE = os.environ.get("TTS_CHOICE")
 TT_CHOICE = os.environ.get("WHISPER_CHOICE")
+CHATBOT_CHOICE = os.environ.get("CHATBOT_SERVICE")
 
 
 def main():
@@ -43,9 +44,19 @@ def main():
         print("\rYou" + colorama.Fore.GREEN + colorama.Style.BRIGHT + " (mic) " + colorama.Fore.RESET + "> ", end="", flush=True)
 
         print(f"{transcript.strip()}")
-        utils.charecter.send_message(transcript)
 
-        message = utils.charecter.received_message()
+        if CHATBOT_CHOICE=="oogabooga":
+            API.Oogabooga_Api_Support.send_via_oogabooga(transcript)
+            message = API.Oogabooga_Api_Support.receive_via_oogabooga()
+
+        elif CHATBOT_CHOICE == "betacharacter":
+            utils.charecter.send_message(transcript)
+            message = utils.charecter.received_message()
+
+        else:
+            print("Sorry Wrong Chatbot Choice")
+
+
 
         if TTS_CHOICE == "ELEVENLABS":
             utils.Elevenlabs.generate_voice(message)
