@@ -46,7 +46,7 @@ If you run into any problems, you can go to the following website to report [iss
 ##  🚧 Goals
 - Add Voicevox Functionality -- DONE ✅
 - Supports Oogabooga Text Gen -- DONE ✅
-- Running the project without depending on beta.charecter.ai website, by runing llm model locally -- PENDING ⏳
+- Running the project without depending on beta.charecter.ai website, by runing llm model locally -- PARTIALLY DONE ⏳
 - Give the waifu an access to the internet -- PENDING ⏳
 - All many more.
 
