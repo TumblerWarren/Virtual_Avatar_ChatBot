@@ -1,11 +1,15 @@
-import requests
+import os
 
+import requests
+from dotenv import load_dotenv
+
+load_dotenv()
 
 HOST = 'localhost:5000'
 URI = f'http://{HOST}/api/v1/chat'
 
 received_message = ""
-
+CHARACTER_CARD=os.environ.get("CHARACTER_CARD")
 
 def run(user_input, history):
     global received_message
@@ -16,7 +20,7 @@ def run(user_input, history):
         'auto_max_new_tokens': False,
         'history': history,
         'mode': 'chat',  # Valid options: 'chat', 'chat-instruct', 'instruct'
-        'character': 'Ayaka',
+        'character': CHARACTER_CARD,
         'instruction_template': 'Vicuna-v1.1',  # Will get autodetected if unset
         'your_name': 'USER',
         # 'name1': 'name of user', # Optional
