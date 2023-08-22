@@ -19,7 +19,7 @@ To create a free AI Waifu that will run on your local computer with minimal GPU 
 - Make sure to install ffmpeg in your computer.
 - Install vtube studio.
 - Download the zip file.
-- Unzip it and set the .env file using notepad.
+- Unzip it and rename Example env.txt to .env file using notepad.
 - Start Vtube Studio and toggle on "Start Api" from settings.
 - Double click to run the start.bat file.
 - Allow the plugin in Vtube studio.
