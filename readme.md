@@ -1,15 +1,15 @@
 <div>
  <a href="https://ibb.co/pLsZxbY"><img src="https://i.ibb.co/HHMYVB5/Dream-Shaper-v7-she-is-16-and-she-is-a-stylish-girl-in-Britain-3.jpg" alt="Dream-Shaper-v7-she-is-16-and-she-is-a-stylish-girl-in-Britain-3" border="0"></a>
   <br>
-  <h1>🌟Yours Truly the AI Waifu</h1>
+  <h1>🌟Yours Truly the AI Virtual Avatar Bot</h1>
   <p>
-    💬 The Ultimate soulmate for Nerds!
+    💬 The Ultimate Companion!
     <br>
   </p>
 </div>
 
 ## The Goal
-To create a free AI Waifu that will run on your local computer with minimal GPU requirement.
+To create a free AI Chatbot with visual movement that will run on your local computer with minimal GPU requirement.
 
 ## Complete Video Installation Guide
 [Video Link](https://youtu.be/aZDaESBFic4)
