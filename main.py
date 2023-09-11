@@ -10,6 +10,7 @@ import TTS.Offline_tts
 import utils.vtube_studio
 import utils.voicevox_setup
 import API.Oogabooga_Api_Support
+import API.local_llm_inference
 
 from dotenv import load_dotenv
 load_dotenv()
