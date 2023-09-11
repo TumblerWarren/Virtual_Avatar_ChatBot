@@ -52,7 +52,11 @@ def main():
         elif CHATBOT_CHOICE == "betacharacter":
             utils.charecter.send_message(transcript)
             message = utils.charecter.received_message()
-
+            
+        elif CHATBOT_CHOICE == "local_llm":
+            API.local_llm_inference.send_via_local_llm(transcript)
+            message=API.local_llm_inference.receive_via_local_llm()            
+       
         else:
             print("Sorry Wrong Chatbot Choice")
 
