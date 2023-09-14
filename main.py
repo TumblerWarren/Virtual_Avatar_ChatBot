@@ -10,6 +10,7 @@ import TTS.Offline_tts
 import utils.vtube_studio
 import utils.voicevox_setup
 import API.Oogabooga_Api_Support
+import API.local_llm_inference
 
 from dotenv import load_dotenv
 load_dotenv()
@@ -53,7 +54,7 @@ def main():
             utils.charecter.send_message(transcript)
             message = utils.charecter.received_message()
             
-        elif CHATBOT_CHOICE == "local_llm":
+        elif CHATBOT_CHOICE == "local_llm" or CHATBOT_CHOICE == "collab_llm":
             API.local_llm_inference.send_via_local_llm(transcript)
             message=API.local_llm_inference.receive_via_local_llm()            
        
