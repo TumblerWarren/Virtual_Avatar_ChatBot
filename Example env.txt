@@ -1,5 +1,8 @@
-#Enter your desired chatbot || oogabooga or betacharacter
-CHATBOT_SERVICE=oogabooga
+#Enter your desired chatbot || oogabooga or betacharacter or local_llm or collab_llm
+CHATBOT_SERVICE=collab_llm
+
+#Enter the Ngrok URL which you have got from Google Collab.
+ngrok_url=https://90d8-34-32-215-157.ngrok-free.app
 
 #If you have selected chatbot as oogabooga please enter the name of the charceter card you uploaded.
 CHARACTER_CARD = Ayaka
