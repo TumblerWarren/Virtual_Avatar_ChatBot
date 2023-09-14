@@ -25,8 +25,10 @@ To create a free AI Chatbot with visual movement that will run on your local com
 - Allow the plugin in Vtube studio.
 - In terminal, when Mic comes, press CTRL and then speak.
    
-
-
+## Features
+- Supports Oogbabooga
+- Supoorts betacharacter.ai
+- Supports Locall LLM running on Local Machine or Collab
 ✔️✔️ Requirements:
 - Above Windows 7
 - [C++ Compiler](https://sourceforge.net/projects/mingw-w64/)
@@ -47,7 +49,8 @@ If you run into any problems, you can go to the following website to report [iss
 ##  🚧 Goals
 - Add Voicevox Functionality -- DONE ✅
 - Supports Oogabooga Text Gen -- DONE ✅
-- Running the project without depending on beta.charecter.ai website, by runing llm model locally -- PARTIALLY DONE ⏳
+- Supports [Local LLM and Collab LLM](https://github.com/TumblerWarren/LLM_Inference_System) inference.
+- Running the project without depending on beta.charecter.ai website, by runing llm model locally --  DONE ✅
 - Give the waifu an access to the internet -- PENDING ⏳
 - All many more.
 
