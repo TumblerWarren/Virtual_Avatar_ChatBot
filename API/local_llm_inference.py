@@ -1,10 +1,16 @@
 import requests
-
+from dotenv import load_dotenv
+import os
+load_dotenv()
+CHATBOT_SERVICE = os.environ.get("CHATBOT_SERVICE")
 message = ""
 
 def send_via_local_llm(user_input):
     global message
-    url = 'http://localhost:5000/generate_response'
+    if CHATBOT_SERVICE == 'local_llm':
+        url = 'http://localhost:5000/generate_response'
+    elif CHATBOT_SERVICE == 'collab_llm':
+        url = os.environ.get("ngrok_url")+"/generate_response"
     data = {'user_send_input': user_input}
     response = requests.post(url, json=data)
     try:
