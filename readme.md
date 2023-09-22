@@ -26,10 +26,13 @@ To create a free AI Chatbot with visual movement that will run on your local com
 - In terminal, when Mic comes, press CTRL and then speak.
    
 ## Features
+
 - Supports Oogbabooga
 - Supoorts betacharacter.ai
 - Supports Locall LLM running on Local Machine or Collab
-✔️✔️ Requirements:
+- 
+##✔️✔️ Requirements:
+
 - Above Windows 7
 - [C++ Compiler](https://sourceforge.net/projects/mingw-w64/)
 - [Git](https://git-scm.com/)
