@@ -44,6 +44,9 @@ To create a free AI Chatbot with visual movement that will run on your local com
 
 If you run into any problems, you can go to the following website to report [issues](https://github.com/TumblerWarren/Waifu/issues/new).
 
+## TROUBLESHOOTING
+If you encounter any error or problem, please refer [here](https://github.com/TumblerWarren/Virtual_Avatar_ChatBot/blob/master/Docs/TroubleShooting.md) before pulling an ISSUE.
+
 ## DOCUMENTATION
 - Help for using [Voicevox](https://github.com/TumblerWarren/Waifu/blob/master/Docs/VoiceVox_Readme_Doc.md).
 - Help for using [Oogabooga Text Gen](https://github.com/TumblerWarren/Waifu/blob/master/Docs/OogaBooga%20Text%20Gen%20Help.md).
