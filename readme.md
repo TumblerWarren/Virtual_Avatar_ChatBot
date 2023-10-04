@@ -25,9 +25,14 @@ To create a free AI Chatbot with visual movement that will run on your local com
 - Allow the plugin in Vtube studio.
 - In terminal, when Mic comes, press CTRL and then speak.
    
+## Features
 
+- Supports Oogbabooga
+- Supoorts betacharacter.ai
+- Supports Locall LLM running on Local Machine or Collab
+  
+## Requirements ✔️✔️
 
-✔️✔️ Requirements:
 - Above Windows 7
 - [C++ Compiler](https://sourceforge.net/projects/mingw-w64/)
 - [Git](https://git-scm.com/)
@@ -39,14 +44,19 @@ To create a free AI Chatbot with visual movement that will run on your local com
 
 If you run into any problems, you can go to the following website to report [issues](https://github.com/TumblerWarren/Waifu/issues/new).
 
+## TROUBLESHOOTING
+If you encounter any error or problem, please refer [here](https://github.com/TumblerWarren/Virtual_Avatar_ChatBot/blob/master/Docs/TroubleShooting.md) before pulling an ISSUE.
+
 ## DOCUMENTATION
 - Help for using [Voicevox](https://github.com/TumblerWarren/Waifu/blob/master/Docs/VoiceVox_Readme_Doc.md).
 - Help for using [Oogabooga Text Gen](https://github.com/TumblerWarren/Waifu/blob/master/Docs/OogaBooga%20Text%20Gen%20Help.md).
-
+- Help for using [Local LLM](https://github.com/TumblerWarren/LLM_Inference_System/blob/master/Documentation/LOCAL%20INSTALLATION%20GUIDE.md) or [Collab](https://github.com/TumblerWarren/LLM_Inference_System/blob/master/Documentation/COLLAB%20GUIDE.md)
+  
 ##  🚧 Goals
 - Add Voicevox Functionality -- DONE ✅
 - Supports Oogabooga Text Gen -- DONE ✅
-- Running the project without depending on beta.charecter.ai website, by runing llm model locally -- PARTIALLY DONE ⏳
+- Supports [Local LLM and Collab LLM](https://github.com/TumblerWarren/LLM_Inference_System) inference.
+- Running the project without depending on beta.charecter.ai website, by runing llm model locally --  DONE ✅
 - Give the waifu an access to the internet -- PENDING ⏳
 - All many more.
 
