@@ -1,3 +1,6 @@
+#Enter your input choice || Speech or Text
+INPUT_CHOICE=Speech
+
 #Enter your desired chatbot || oogabooga or betacharacter or local_llm or collab_llm
 CHATBOT_SERVICE=collab_llm
 
