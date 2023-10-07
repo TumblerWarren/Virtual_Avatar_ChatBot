@@ -7,5 +7,5 @@
 | 3  | TypeError: str expected, not NoneType| You have to resave "Example env.txt" by naming it as .env and selecting the format to all types     |
 | 4  | Error [WinError 2] The system cannot find the file specified  | Install [FFMPEG](https://youtu.be/EyIIvctDhYc?si=0rC7SEhh9uAO9oCf)      |
 | 5      | You (mic) >                   | Select your LLM source properly and write it in .env file      |
-|        | Hi. Error Response AI:         |                                                                |
-|        | You (mic) >                   |        
+|         Hi. Error Response AI:                                                                         |
+|         You (mic) >                           
