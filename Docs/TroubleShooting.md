@@ -7,5 +7,5 @@
 | 3  | TypeError: str expected, not NoneType| You have to resave "Example env.txt" by naming it as .env and selecting the format to all types     |
 | 4  | Error [WinError 2] The system cannot find the file specified  | Install [FFMPEG](https://youtu.be/EyIIvctDhYc?si=0rC7SEhh9uAO9oCf)      |
 | 5      | You (mic) >  Hi.<br>Error Response <br>AI: <br>You (mic) >                        | Select your LLM source properly and write it in .env file      
-| 6  | characterai.errors.NotFoundError: The requested resource was not found on this server.  | [Please enter the character key correclty!](https://github.com/TumblerWarren/Virtual_Avatar_ChatBot/issues/6)      |
+| 6  | characterai.errors.NotFoundError: The requested resource was not found on this server.  | [Please enter the character key correctly!](https://github.com/TumblerWarren/Virtual_Avatar_ChatBot/issues/6)      |
                      
