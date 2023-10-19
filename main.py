@@ -6,7 +6,7 @@ import utils.charecter
 import utils.audio
 import utils.hotkeys
 import utils.transcriber_translate
-import TTS.Offline_tts
+#import TTS.Offline_tts
 import utils.vtube_studio
 import utils.voicevox_setup
 import API.Oogabooga_Api_Support
@@ -72,8 +72,9 @@ def main():
             if TTS_CHOICE == "ELEVENLABS":
                 utils.Elevenlabs.generate_voice(message)
 
-            elif TTS_CHOICE == "LOCAL_TTS":
-                TTS.Offline_tts.test_1(message)
+            # LOCAL_TTS is out of support for now. Will be back soon.
+            #elif TTS_CHOICE == "LOCAL_TTS":
+                #TTS.Offline_tts.test_1(message)
 
             elif TTS_CHOICE == "VOICEVOX":
                 id = os.environ.get("VOICE_ID")
@@ -123,8 +124,9 @@ def main():
             if TTS_CHOICE == "ELEVENLABS":
                 utils.Elevenlabs.generate_voice(message)
 
-            elif TTS_CHOICE == "LOCAL_TTS":
-                TTS.Offline_tts.test_1(message)
+            #LOCAL_TTS is out of support for now. Will be back soon.
+            #elif TTS_CHOICE == "LOCAL_TTS":
+                #TTS.Offline_tts.test_1(message)
 
             elif TTS_CHOICE == "VOICEVOX":
                 id = os.environ.get("VOICE_ID")

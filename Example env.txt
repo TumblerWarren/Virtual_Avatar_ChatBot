@@ -19,7 +19,7 @@ PYCHAI=Enter your charecter.ai API.
 #Enter your charecter key, How to link :- https://pycai.gitbook.io/welcome/api/values
 CHARECTER_KEY= Charecter Token here
 
-#Enter your Text to Speech Choice | ELEVENLABS or LOCAL_TTS or VOICEVOX(Japanese Only)
+#Enter your Text to Speech Choice | ELEVENLABS or VOICEVOX(Japanese Only) |LOCAL_TTS is out of support now,I will add it after fixing the problem
 TTS_CHOICE = VOICEVOX
 
 #If you have selected Voicevox, enter the voice ID, you can find the voice id from docs VOICEVOX_HELP.
