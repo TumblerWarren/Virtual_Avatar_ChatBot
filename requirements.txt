@@ -19,54 +19,53 @@ humanize~=4.7.0
 
 #TTS LIBRARY
 # core deps
-
-scipy>=1.4.0
-cython==0.29.30
-soundfile~=0.12.1
-librosa==0.10.0.*
-inflect==5.6.0
-numba==0.55.1;python_version<"3.9"
-numba==0.57.0;python_version>="3.9"
-anyascii~=0.3.2
-pyyaml~=6.0
-fsspec>=2021.04.0
-packaging~=23.1
-aiohttp
+#scipy>=1.4.0
+#cython==0.29.30
+#soundfile~=0.12.1
+#librosa==0.10.0.*
+#inflect==5.6.0
+#numba==0.55.1;python_version<"3.9"
+#numba==0.57.0;python_version>="3.9"
+#anyascii~=0.3.2
+#pyyaml~=6.0
+#fsspec>=2021.04.0
+#packaging~=23.1
+#aiohttp
 # deps for examples
-flask~=2.3.2
+#flask~=2.3.2
 # deps for inference
-pysbd~=0.3.4
+#pysbd~=0.3.4
 # deps for notebooks
-pandas~=2.0.3
+#pandas~=2.0.3
 # deps for training
-matplotlib~=3.7.2
+#matplotlib~=3.7.2
 # coqui stack
-trainer~=0.0.27
+#trainer~=0.0.27
 # config management
-coqpit>=0.0.16
+#coqpit>=0.0.16
 # chinese g2p deps
-jieba~=0.42.1
-pypinyin~=0.49.0
+#jieba~=0.42.1
+#pypinyin~=0.49.0
 # japanese g2p deps
-mecab-python3==1.0.6
-unidic-lite==1.0.8
+#mecab-python3==1.0.6
+#unidic-lite==1.0.8
 # gruut+supported langs
-gruut[de,es,fr]==2.2.3
+#gruut[de,es,fr]==2.2.3
 # deps for korean
-jamo~=0.4.1
-nltk
-g2pkk>=0.1.1
+#jamo~=0.4.1
+#nltk
+#g2pkk>=0.1.1
 # deps for bangla
-bangla==0.0.2
-bnnumerizer~=0.0.2
-bnunicodenormalizer==0.1.1
+#bangla==0.0.2
+#bnnumerizer~=0.0.2
+#bnunicodenormalizer==0.1.1
 #deps for tortoise
-einops~=0.6.1
-transformers~=4.30.2
+#einops~=0.6.1
+#transformers~=4.30.2
 #deps for bark
-encodec~=0.1.1
-num2words~=0.5.12
-tokenizers~=0.13.3
+#encodec~=0.1.1
+#num2words~=0.5.12
+#tokenizers~=0.13.3
 
 
 
