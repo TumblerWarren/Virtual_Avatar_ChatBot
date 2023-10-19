@@ -12,8 +12,8 @@
 To create a free AI Chatbot with visual movement that will run on your local computer with minimal GPU requirement.
 
 ## Complete Video Installation Guide
-[Video Link](https://youtu.be/aZDaESBFic4)
-
+[Video Link-1](https://youtu.be/aZDaESBFic4)
+[Video Link-2](https://youtu.be/xT4WvPg0wRs)
 ## Steps for installation
 
 - Make sure to install ffmpeg in your computer.
