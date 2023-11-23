@@ -1,4 +1,4 @@
-from elevenlabs import generate, play, set_api_key ,save, voices
+from elevenlabs import set_api_key ,save, voices,Voice, VoiceSettings, generate
 import os
 
 
@@ -15,10 +15,27 @@ FILENAME = "output.mp3"
 OUTPUT_PATH = os.path.join(current_directory, "resource", "voice_out", FILENAME)
 voices = voices()
 
+
+def get_voice_id_by_name(name):
+    voices_dict = {voice.name.lower(): voice.voice_id for voice in voices}
+    return voices_dict.get(name.lower())
+
+
 def generate_voice(responded_text):
-    audio_gen = generate(text=responded_text,voice=USER_VOICE)
+    # audio_gen = generate(text=responded_text, voice=USER_VOICE)
+    voice_id = get_voice_id_by_name(USER_VOICE)
+    audio_gen = generate(
+        text=responded_text,
+        model="eleven_multilingual_v2",
+        voice=Voice(
+            voice_id=voice_id,
+
+            settings=VoiceSettings(stability=0.70, similarity_boost=0.75, style=0.0, use_speaker_boost=True)
+        )
+    )
     save(audio_gen, OUTPUT_PATH)
     return OUTPUT_PATH
-    
+
+
 
 
