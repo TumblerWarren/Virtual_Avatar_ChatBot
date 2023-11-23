@@ -119,8 +119,8 @@ def main():
                 utils.Elevenlabs.generate_voice(message)
 
             #LOCAL_TTS is out of support for now. Will be back soon.
-            #elif TTS_CHOICE == "LOCAL_TTS":
-                #TTS.Offline_tts.test_1(message)
+            elif TTS_CHOICE == "LOCAL_TTS":
+                utils.Offline_tts.voice_generation(message)
 
             elif TTS_CHOICE == "VOICEVOX":
                 id = os.environ.get("VOICE_ID")
