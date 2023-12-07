@@ -1,11 +1,11 @@
-@echo off
+u@echo off
 setlocal
 
 REM Get the current directory of the batch file
 set "SCRIPT_DIR=%~dp0"
 
 REM Set the log file path
-set "LOG_FILE=%SCRIPT_DIR%\log.txt"
+set "LOG_FILE=%SCRIPT_DIR%\setup_log.txt"
 
 REM Change to the script directory
 cd /d "%SCRIPT_DIR%"
