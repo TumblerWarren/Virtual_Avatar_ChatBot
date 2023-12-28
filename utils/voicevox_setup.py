@@ -1,32 +1,5 @@
-'''from voicevox import Client
-import asyncio
-import utils.translationtest
-import os
-
-script_dir = os.path.dirname(os.path.abspath(__file__))
-
-# Construct the path to the file in the 'utils' folder
-FILE_PATH= os.path.join(script_dir, "..", "utils", "resource", "voice_out", "voicevox.wav")
-
-async def generate_voice(text, id):
-    text = utils.translationtest.translation(text, "ja")
-    async with Client() as client:
-        audio_query = await client.create_audio_query(text, speaker=id)
-        with open(FILE_PATH, "wb") as f:
-            f.write(await audio_query.synthesis(speaker=id))
-
-def run_voicevox(message, id):
-    text = utils.translationtest.translation(message, "ja")
-    asyncio.to_thread(generate_voice, text, id)
-
-
-#run_voicevox("Hello, My name is warren!",8)'''
-
-
 import requests
 import os
-
-
 
 script_dir = os.path.dirname(os.path.abspath(__file__))
 # Construct the path to the file in the 'utils' folder

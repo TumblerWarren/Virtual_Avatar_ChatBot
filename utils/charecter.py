@@ -11,6 +11,8 @@ CHARECTER_KEY=os.environ.get("CHARECTER_KEY")
 client = PyCAI(PYCHAI_KEY)
 message=""
 name=""
+
+
 def send_message(user_input):
     global message, name
     message_send = user_input
@@ -18,7 +20,6 @@ def send_message(user_input):
 
     message = data['replies'][0]['text']
     name = data['src_char']['participant']['name']
-
 
 
 def received_message():

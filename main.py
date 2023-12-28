@@ -1,16 +1,7 @@
 import colorama
 import humanize, os, threading
-
-import utils.Elevenlabs
-import utils.charecter
 import utils.audio
-import utils.hotkeys
-import utils.transcriber_translate
-import utils.Offline_tts
 import utils.vtube_studio
-import utils.voicevox_setup
-import API.Oogabooga_Api_Support
-import API.local_llm_inference
 
 from dotenv import load_dotenv
 load_dotenv()
@@ -20,9 +11,12 @@ TT_CHOICE = os.environ.get("WHISPER_CHOICE")
 CHATBOT_CHOICE = os.environ.get("CHATBOT_SERVICE")
 input_choice = os.environ.get("INPUT_CHOICE")
 
+
 def main():
 
     if input_choice.lower() == "speech":
+        import utils.transcriber_translate
+        import utils.hotkeys
         while True:
             print("You" + colorama.Fore.GREEN + colorama.Style.BRIGHT + " (mic) " + colorama.Fore.RESET + ">", end="",
                   flush=True)
@@ -55,14 +49,17 @@ def main():
             print(f"{transcript.strip()}")
 
             if CHATBOT_CHOICE == "oogabooga":
+                import API.Oogabooga_Api_Support
                 API.Oogabooga_Api_Support.send_via_oogabooga(transcript)
                 message = API.Oogabooga_Api_Support.receive_via_oogabooga()
 
             elif CHATBOT_CHOICE == "betacharacter":
+                import utils.charecter
                 utils.charecter.send_message(transcript)
                 message = utils.charecter.received_message()
 
             elif CHATBOT_CHOICE == "local_llm" or CHATBOT_CHOICE == "collab_llm":
+                import API.local_llm_inference
                 API.local_llm_inference.send_via_local_llm(transcript)
                 message = API.local_llm_inference.receive_via_local_llm()
 
@@ -70,12 +67,15 @@ def main():
                 print("Sorry Wrong Chatbot Choice")
 
             if TTS_CHOICE == "ELEVENLABS":
+                import utils.Elevenlabs
                 utils.Elevenlabs.generate_voice(message)
 
             elif TTS_CHOICE == "LOCAL_TTS":
+                import utils.Offline_tts
                 utils.Offline_tts.voice_generation(message)
 
             elif TTS_CHOICE == "VOICEVOX":
+                import utils.voicevox_setup
                 id = os.environ.get("VOICE_ID")
                 utils.voicevox_setup.generate_voice(message, id)
 
@@ -98,17 +98,20 @@ def main():
         while True:
 
             print( colorama.Fore.GREEN + colorama.Style.BRIGHT + "YOU : ", end="", flush=True)
-            transcript = input((colorama.Fore.GREEN + colorama.Style.BRIGHT +  colorama.Fore.RESET + ">"))
+            transcript = input(colorama.Fore.GREEN + colorama.Style.BRIGHT + colorama.Fore.RESET + ">")
 
             if CHATBOT_CHOICE == "oogabooga":
+                import API.Oogabooga_Api_Support
                 API.Oogabooga_Api_Support.send_via_oogabooga(transcript)
                 message = API.Oogabooga_Api_Support.receive_via_oogabooga()
 
             elif CHATBOT_CHOICE == "betacharacter":
+                import utils.charecter
                 utils.charecter.send_message(transcript)
                 message = utils.charecter.received_message()
 
             elif CHATBOT_CHOICE == "local_llm" or CHATBOT_CHOICE == "collab_llm":
+                import API.local_llm_inference
                 API.local_llm_inference.send_via_local_llm(transcript)
                 message = API.local_llm_inference.receive_via_local_llm()
 
@@ -116,13 +119,16 @@ def main():
                 print("Sorry Wrong Chatbot Choice")
 
             if TTS_CHOICE == "ELEVENLABS":
+                import utils.Elevenlabs
                 utils.Elevenlabs.generate_voice(message)
 
             #LOCAL_TTS is out of support for now. Will be back soon.
             elif TTS_CHOICE == "LOCAL_TTS":
+                import utils.Offline_tts
                 utils.Offline_tts.voice_generation(message)
 
             elif TTS_CHOICE == "VOICEVOX":
+                import utils.voicevox_setup
                 id = os.environ.get("VOICE_ID")
                 utils.voicevox_setup.generate_voice(message, id)
 
