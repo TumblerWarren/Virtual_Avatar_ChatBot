@@ -1,4 +1,4 @@
-u@echo off
+@echo off
 setlocal
 
 REM Get the current directory of the batch file
