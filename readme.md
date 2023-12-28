@@ -34,6 +34,7 @@ To create a free AI Chatbot with visual movement that will run on your local com
 ## Requirements ✔️✔️
 
 - Above Windows 7
+- [Python](https://apps.microsoft.com/detail/9PJPW5LDXLZ5?hl=en-us&gl=US)
 - [C++ Compiler](https://sourceforge.net/projects/mingw-w64/)
 - [Git](https://git-scm.com/)
 - Need help to Install FFmpeg? See this [video](https://www.youtube.com/watch?v=EyIIvctDhYc&t=252s).
