@@ -70,7 +70,7 @@ humanize~=4.7.0
 
 TTS==0.20.6
 uvicorn~=0.23.2
-fastapi~=0.101.0
+fastapi
 psutil~=5.9.5
 voicevox-client
 translate~=3.6.1
