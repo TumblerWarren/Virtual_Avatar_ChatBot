@@ -80,6 +80,7 @@ I used the following projects as my reference. My heartful gratitude to these gu
 ## 😇 THANKS FOR THE SUPPORT!
 - Alexander Lewis
 
+## 📝 REFERENCES:- 
 [desktop-waifu](https://github.com/AlizerUncaged/desktop-waifu) - Your ultimate companion!
 
 [CharacterAI](https://github.com/kramcat/CharacterAI) - An unofficial API for Character AI for Python using Playwright.
