@@ -55,8 +55,7 @@ def main():
 
             elif CHATBOT_CHOICE == "betacharacter":
                 import utils.charecter
-                utils.charecter.send_message(transcript)
-                message = utils.charecter.received_message()
+                message = utils.charecter.send_message(transcript)
 
             elif CHATBOT_CHOICE == "local_llm" or CHATBOT_CHOICE == "collab_llm":
                 import API.local_llm_inference
@@ -107,8 +106,8 @@ def main():
 
             elif CHATBOT_CHOICE == "betacharacter":
                 import utils.charecter
-                utils.charecter.send_message(transcript)
-                message = utils.charecter.received_message()
+                message = utils.charecter.send_message(transcript)
+
 
             elif CHATBOT_CHOICE == "local_llm" or CHATBOT_CHOICE == "collab_llm":
                 import API.local_llm_inference

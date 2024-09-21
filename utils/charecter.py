@@ -1,27 +1,35 @@
 import os
-
-from characterai import PyCAI
 from dotenv import load_dotenv
+from characterai import PyCAI
+
 load_dotenv()
 
-PYCHAI_KEY=os.environ.get("PYCHAI")
-CHARECTER_KEY=os.environ.get("CHARECTER_KEY")
-
+PYCHAI_KEY = os.environ.get("PYCHAI")
+CHARECTER_KEY = os.environ.get("CHARECTER_KEY")
 
 client = PyCAI(PYCHAI_KEY)
-message=""
-name=""
+message = ""
+name = ""
+
+char = CHARECTER_KEY
+chat = client.chat.get_chat(char)
+
+participants = chat['participants']
+
+if not participants[0]['is_human']:
+    tgt = participants[0]['user']['username']
+else:
+    tgt = participants[1]['user']['username']
 
 
 def send_message(user_input):
-    global message, name
-    message_send = user_input
-    data = client.chat.send_message(CHARECTER_KEY, message_send)
 
-    message = data['replies'][0]['text']
+    message = user_input
+    data = client.chat.send_message(
+        chat['external_id'], tgt, message
+    )
     name = data['src_char']['participant']['name']
 
-
-def received_message():
-    print(f"{name}: {message}")
-    return message
+    text = data['replies'][0]['text']
+    print(f"{name}: {text}")
+    return text
