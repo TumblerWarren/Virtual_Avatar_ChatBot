@@ -10,9 +10,9 @@ PyAudio~=0.2.13
 pydub~=0.25.1
 pyvts~=0.3.1
 keyboard~=0.13.5
-characterai~=0.6.0
+characterai==0.8.0
 python-dotenv~=1.0.0
-elevenlabs~=0.2.19
+elevenlabs
 humanize~=4.7.0
 
 
@@ -68,7 +68,7 @@ humanize~=4.7.0
 #tokenizers~=0.13.3
 
 
-TTS==0.20.6
+#TTS==0.20.6
 uvicorn~=0.23.2
 fastapi
 psutil~=5.9.5
