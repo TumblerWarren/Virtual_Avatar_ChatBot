@@ -3,11 +3,13 @@ import utils.audio
 import pyvts
 from dotenv import load_dotenv
 
+AUTH_TOKEN = "a6266eccbfb1071cc7e3b9b8f9cfcf399e50218635515a880ebbb28177cbaeb6"
 VTS = pyvts.vts(
     plugin_info={
         "plugin_name": "waifu",
         "developer": "Warren",
-        "authentication_token_path": "./token.txt",
+        "authentication_token_path": "./toen.txt",
+        "authentication_token": AUTH_TOKEN
     },
     vts_api_info={
         "version": "1.0",
@@ -28,8 +30,11 @@ def set_audio_level(level):
 
 async def start():
     await VTS.connect()
-    await VTS.request_authenticate_token()
+    #await VTS.request_authenticate_token()
+    await VTS.read_token()
     await VTS.request_authenticate()
+    #await VTS.write_token()
+    
 
     # Continuously update the mouth movement based on VOICE_LEVEL
     while True:
