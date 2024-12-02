@@ -32,7 +32,7 @@ CUDA_STATUS=True
 ELEVENLAB_KEY= YOUR API
 
 #If you have selected Elevenlabs, enter you model of choice. You can see examples from Elevenlabs website.
-VOICE_MODEL=Elli
+VOICE_MODEL=Sarah
 
 #Enter your whisper model, see VRAM requirement for further details at whisper Github | tiny, base, small
 WHISPER_MODEL=base
