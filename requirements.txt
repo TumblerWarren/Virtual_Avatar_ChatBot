@@ -2,10 +2,11 @@
 colorama~= 0.4.6
 numpy
 
-tqdm~=4.65.0
+tqdm~=4.66.3
+
 six~=1.16.0
 
-requests~=2.31.0
+requests>=2.31.0
 PyAudio~=0.2.13
 pydub~=0.25.1
 pyvts~=0.3.1
