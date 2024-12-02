@@ -1,13 +1,16 @@
-import asyncio,os,threading
+import asyncio, os, threading
 import utils.audio
 import pyvts
 from dotenv import load_dotenv
-
+current_directory = os.getcwd()
+print("Current Directory:", current_directory)
 VTS = pyvts.vts(
     plugin_info={
         "plugin_name": "waifu",
         "developer": "Warren",
-        "authentication_token_path": "./token.txt",
+        #"authentication_token_path": "token.txt",
+        "authentication_token_path": r"F:\Projects\Virtual_Avatar_ChatBot\token.txt",
+
     },
     vts_api_info={
         "version": "1.0",
@@ -26,37 +29,43 @@ def set_audio_level(level):
     global VOICE_LEVEL
     VOICE_LEVEL = level
 
+
 async def start():
     await VTS.connect()
-    await VTS.request_authenticate_token()
-    await VTS.request_authenticate()
+    await VTS.read_token()
+    if await VTS.request_authenticate() == False:
+        await VTS.request_authenticate_token()
+        await VTS.request_authenticate()
+        await VTS.write_token()
+    else:
+        await VTS.connect()
+        await VTS.read_token()
+        await VTS.request_authenticate()
 
     # Continuously update the mouth movement based on VOICE_LEVEL
     while True:
         await VTS.request(
             VTS.vts_request.requestSetParameterValue(parameter="MouthOpen", value=VOICE_LEVEL)
         )
-        await asyncio.sleep(1/30)  # 30fps
+        await asyncio.sleep(1 / 30)  # 30fps
+
 
 def run_vtube_studio():
     asyncio.run(start())
 
 
-
-
-
-
 def speak():
-    if TTS_CHOICE.upper()=="LOCAL_TTS":
-        memfile = os.path.join(os.path.dirname(os.path.abspath(__file__)), "resource", "Voice_out", "local_tts_output.wav")
+    if TTS_CHOICE.upper() == "LOCAL_TTS":
+        memfile = os.path.join(os.path.dirname(os.path.abspath(__file__)), "resource", "Voice_out",
+                               "local_tts_output.mp3")
 
-        utils.audio.play_wav(memfile, set_audio_level)
+        utils.audio.play_mp3(memfile, set_audio_level)
 
-    elif TTS_CHOICE.upper()=="ELEVENLABS":
+    elif TTS_CHOICE.upper() == "ELEVENLABS":
         memfile = os.path.join(os.path.dirname(os.path.abspath(__file__)), "resource", "Voice_out", "output.mp3")
-        utils.audio.play_mp3(memfile,set_audio_level)
+        utils.audio.play_mp3(memfile, set_audio_level)
 
-    elif TTS_CHOICE.upper()=="VOICEVOX":
+    elif TTS_CHOICE.upper() == "VOICEVOX":
         memfile = os.path.join(os.path.dirname(os.path.abspath(__file__)), "resource", "Voice_out", "voicevox.wav")
         utils.audio.play_wav(memfile, set_audio_level)
 
@@ -67,7 +76,4 @@ def action():
     vtube_studio_thread.daemon = True
     vtube_studio_thread.start()
     speak()
-
-
-
 
