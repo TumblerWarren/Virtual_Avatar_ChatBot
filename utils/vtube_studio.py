@@ -9,7 +9,7 @@ VTS = pyvts.vts(
         "plugin_name": "waifu",
         "developer": "Warren",
         #"authentication_token_path": "token.txt",
-        "authentication_token_path": r"F:\Projects\Virtual_Avatar_ChatBot\token.txt",
+        "authentication_token_path": r"./token.txt",
 
     },
     vts_api_info={
@@ -32,15 +32,17 @@ def set_audio_level(level):
 
 async def start():
     await VTS.connect()
-    await VTS.read_token()
-    if await VTS.request_authenticate() == False:
-        await VTS.request_authenticate_token()
-        await VTS.request_authenticate()
-        await VTS.write_token()
-    else:
-        await VTS.connect()
-        await VTS.read_token()
-        await VTS.request_authenticate()
+    await VTS.request_authenticate_token()
+    await VTS.request_authenticate()
+
+    # if await VTS.request_authenticate() == False:
+    #     await VTS.request_authenticate_token()
+    #     await VTS.request_authenticate()
+    #     await VTS.write_token()
+    #else:
+        #await VTS.connect()
+        #await VTS.read_token()
+        #await VTS.request_authenticate()
 
     # Continuously update the mouth movement based on VOICE_LEVEL
     while True:

@@ -20,6 +20,7 @@ python -m pip install torch torchvision torchaudio --index-url https://download.
 REM Install openai-whisper from the GitHub repository
 python -m pip install git+https://github.com/openai/whisper.git 2>> "%LOG_FILE%"
 python -m pip install git+https://github.com/huggingface/parler-tts.git
+python -m pip install git+https://github.com/Xtr4F/PyCharacterAI
 
 REM Install Playwright
 python -m playwright install 2>> "%LOG_FILE%"
