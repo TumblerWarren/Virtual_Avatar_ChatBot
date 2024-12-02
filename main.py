@@ -2,6 +2,7 @@ import colorama
 import humanize, os, threading
 import utils.audio
 import utils.vtube_studio
+import asyncio
 
 from dotenv import load_dotenv
 load_dotenv()
@@ -11,7 +12,7 @@ TT_CHOICE = os.environ.get("WHISPER_CHOICE")
 CHATBOT_CHOICE = os.environ.get("CHATBOT_SERVICE")
 input_choice = os.environ.get("INPUT_CHOICE")
 
-
+asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
 def main():
 
     if input_choice.lower() == "speech":
@@ -54,8 +55,8 @@ def main():
                 message = API.Oogabooga_Api_Support.receive_via_oogabooga()
 
             elif CHATBOT_CHOICE == "betacharacter":
-                import utils.charecter
-                message = utils.charecter.send_message(transcript)
+                import utils.character_ai
+                message = utils.character_ai.send_message(transcript)
 
             elif CHATBOT_CHOICE == "local_llm" or CHATBOT_CHOICE == "collab_llm":
                 import API.local_llm_inference
@@ -105,8 +106,8 @@ def main():
                 message = API.Oogabooga_Api_Support.receive_via_oogabooga()
 
             elif CHATBOT_CHOICE == "betacharacter":
-                import utils.charecter
-                message = utils.charecter.send_message(transcript)
+                import utils.character_ai
+                message = utils.character_ai.send_message(transcript)
 
 
             elif CHATBOT_CHOICE == "local_llm" or CHATBOT_CHOICE == "collab_llm":
@@ -137,7 +138,8 @@ def main():
             # Set audio level using VTube Studio
             utils.vtube_studio.set_audio_level(0.5)
 
-            # Play audio using VTube Studio
+            # Play audio using VTube
+
             utils.vtube_studio.speak()
 
             # After use, delete the recording.
