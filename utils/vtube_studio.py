@@ -57,7 +57,7 @@ def run_vtube_studio():
 
 
 def speak():
-    if TTS_CHOICE.upper() == "LOCAL_TTS":
+    if TTS_CHOICE.upper() == "LOCAL":
         memfile = os.path.join(os.path.dirname(os.path.abspath(__file__)), "resource", "Voice_out",
                                "local_tts_output.mp3")
 

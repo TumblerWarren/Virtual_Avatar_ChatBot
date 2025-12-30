@@ -39,3 +39,9 @@ WHISPER_MODEL=base
 
 #Want to speak in english or your native language | TRANSCRIBE, TRANSLATE
 WHISPER_CHOICE=TRANSCRIBE
+
+
+TTS_MOOD=happy
+TTS_VOICE_NAME=Talia
+VTUBE_PATH=
+VOICEVOX_PATH=

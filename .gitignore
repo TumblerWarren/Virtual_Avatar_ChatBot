@@ -1,0 +1,21 @@
+# Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
+
+# dependencies
+venv/
+user-stt-venv/
+
+# Env Variable
+.env/
+
+# Cache
+API/__pycache__
+utils/__pycache__
+
+#APP
+VOICEVOX/
+
+#LOGS
+setup_log.txt
+StartApp_log.txt
+token.txt
+user_input_log.txt

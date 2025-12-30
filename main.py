@@ -70,7 +70,7 @@ def main():
                 import utils.Elevenlabs
                 utils.Elevenlabs.generate_voice(message)
 
-            elif TTS_CHOICE == "LOCAL_TTS":
+            elif TTS_CHOICE == "LOCAL":
                 import utils.Offline_tts
                 utils.Offline_tts.voice_generation(message)
 
@@ -123,7 +123,7 @@ def main():
                 utils.Elevenlabs.generate_voice(message)
 
             #LOCAL_TTS is out of support for now. Will be back soon.
-            elif TTS_CHOICE == "LOCAL_TTS":
+            elif TTS_CHOICE == "LOCAL":
                 import utils.Offline_tts
                 utils.Offline_tts.voice_generation(message)
 

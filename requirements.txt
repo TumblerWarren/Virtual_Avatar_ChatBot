@@ -5,7 +5,7 @@ numpy
 tqdm~=4.66.3
 
 six~=1.16.0
-
+transformers
 requests>=2.31.0
 PyAudio~=0.2.13
 pydub~=0.25.1
@@ -16,8 +16,8 @@ python-dotenv~=1.0.0
 elevenlabs
 humanize~=4.7.0
 accelerate
-
-#uvicorn~=0.23.2
+pytchat~=0.5.5
+uvicorn~=0.23.2
 fastapi
 psutil~=5.9.5
 voicevox-client

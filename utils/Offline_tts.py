@@ -6,14 +6,20 @@ import soundfile as sf
 from parler_tts import ParlerTTSForConditionalGeneration
 from transformers import AutoTokenizer, AutoFeatureExtractor, set_seed
 import os
+from dotenv import load_dotenv
 
+load_dotenv()
+
+mood = os.environ.get("TTS_MOOD")
+voice_name = os.environ.get("TTS_VOICE_NAME")
+pace = os.environ.get("PACE")
 current_directory = os.path.dirname(os.path.abspath(__file__))
 FILENAME = "local_tts_output.mp3"
 OUTPUT_PATH = os.path.join(current_directory, "resource", "voice_out", FILENAME)
 
 # Check if GPU is available and set device
-device = "cuda:0" if torch.cuda.is_available() else "cpu"
-
+#device = "cuda:0" if torch.cuda.is_available() else "cpu"
+device = "cpu"
 # Load model, tokenizer, and feature extractor
 repo_id = "parler-tts/parler-tts-mini-expresso"
 model = ParlerTTSForConditionalGeneration.from_pretrained(repo_id).to(device)
@@ -48,16 +54,15 @@ def preprocess(text):
 
 # TTS generation function
 def voice_generation(text):
-    description = "Elisabeth speaks happily at a slightly slower than average pace with high quality audio."
+    description = f"""{voice_name} speaks in {mood} mood in a {pace} pace with high quality audio."""
     inputs = tokenizer(description, return_tensors="pt").to(device)
     prompt = tokenizer(preprocess(text), return_tensors="pt").to(device)
 
     set_seed(SEED)
     generation = model.generate(input_ids=inputs.input_ids, prompt_input_ids=prompt.input_ids)
     audio_arr = generation.cpu().numpy().squeeze()
-
+    print("Offline TTS Done!")
     # Save the generated audio
     sf.write(OUTPUT_PATH, audio_arr, SAMPLE_RATE)
     return OUTPUT_PATH
-
 
