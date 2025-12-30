@@ -10,6 +10,7 @@ user-stt-venv/
 # Cache
 API/__pycache__
 utils/__pycache__
+utils/resource
 
 #APP
 VOICEVOX/
