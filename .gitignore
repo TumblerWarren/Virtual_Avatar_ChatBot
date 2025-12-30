@@ -6,6 +6,7 @@ user-stt-venv/
 
 # Env Variable
 .env
+.env.*
 
 # Cache
 API/__pycache__
