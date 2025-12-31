@@ -1,5 +1,5 @@
 from fastapi import FastAPI, HTTPException
-from voicevox import Client
+from vvclient import Client
 import translationtest
 import uvicorn
 import program_run_test
